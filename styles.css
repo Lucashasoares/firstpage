@@ -1,0 +1,103 @@
+@media (min-width: 1400px) {
+    .container {
+      max-width: 60%;
+    }
+    .widthform {
+      width: 60%;
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    .logoTop{
+      max-width: 300px;  
+      display: block;    
+      margin: 0 auto;
+      padding: 20px;
+  }
+  }
+  @media (max-width: 1400px) and (min-width: 768px) {
+    .container {
+      padding-left: 32px;
+      padding-right: 32px;
+    } 
+    .widthform {
+      width: 60%;
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    } 
+    .logoTop{
+      max-width: 300px;  
+      display: block;    
+      margin: 0 auto;
+      padding: 20px;
+  }
+  }
+  @media (max-width: 1400px) and (min-width: 768px) {
+    .container-fluid {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    .widthform {
+      width: 60%;
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    .logoTop{
+      max-width: 300px;  
+      display: block;    
+      margin: 0 auto;
+      padding: 20px;
+  }
+  }
+  @media (max-width: 767px) {
+    .container-fluid {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .widthform {
+      width: 60%;
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    .logoTop{
+      max-width: 30%;  
+      display: block;    
+      margin: 0 auto;
+      padding: 20px;
+  }
+  }
+  .space{
+    margin: 20px;
+    text-align: center;
+  }
+
+  .space20px{
+    margin: 20px;
+  }
+
+  .space50porcento {
+    display: flex;
+    flex-wrap: wrap;
+  }  
+
+  .half-width {
+    width: calc(50% - 5px); /* Subtraindo 5px para deixar um espaço entre os elementos */
+}
+
+  .half-width label,
+  .half-width input {
+    width: 100%; /* Certificando-se de que a largura do label e do input seja de 100% */
+}
+
+  

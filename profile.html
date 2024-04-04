@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap">
+    </noscript>
+    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=3pPeqW">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=3pPeqW" type="text/css">
+    <!-- Tostify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container-fluid widthform align-items-center">
+        <div class="space">
+            <h1><strong>Profile</strong></h1>
+        </div>
+        <form id="profileForm" class="mbr-form form-with-styler">
+            <div class="dragArea row space20px">
+                <label for="name">Full Name:</label>
+                <input type="name" id="name" name="name" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="dtbirth">Date of Birth:</label>
+                <input type="date" id="dtbirth" name="dtbirth" class="form-control" required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="parentGuardian">Parent/Guardian full name (if under 18):</label>
+                <input type="name" id="parentGuardian" name="parentGuardian" class="form-control">
+            </div>
+            <div class="dragArea row space20px">
+                <label for="address">Address:</label>
+                <input type="name" id="address" name="address" class="form-control" required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="city">City:</label>
+                <input type="name" id="city" name="city" class="form-control" required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="province">Province:</label>
+                <select id="province" name="province" class="form-control" required>
+                    <option value=""></option>
+                    <option value="AB">Alberta</option>
+                    <option value="BC">British Columbia</option>
+                    <option value="MB">Manitoba</option>
+                    <option value="NB">New Brunswick</option>
+                    <option value="NL">Newfoundland and Labrador</option>
+                    <option value="NS">Nova Scotia</option>
+                    <option value="ON">Ontario</option>
+                    <option value="PE">Prince Edward Island</option>
+                    <option value="QC">Quebec</option>
+                    <option value="SK">Saskatchewan</option>
+                    <option value="NT">Northwest Territories</option>
+                    <option value="NU">Nunavut</option>
+                    <option value="YT">Yukon</option>
+                </select>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="postalcode">Postal Code:</label>
+                <input type="text" id="postalcode" name="postalcode" class="form-control" placeholder="A1A 1A1"
+                    required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="postalcode">Phone Number:</label>
+                <input type="text" id="phone" name="phone" class="form-control" placeholder="(000) 000-0000" required>
+            </div>
+            <div class="space">
+                <h1><strong>Emergency Contact</strong></h1>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="nameEmergency">Name:</label>
+                <input type="text" id="nameEmergency" name="nameEmergency" class="form-control" placeholder="Name"
+                    required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="ralationshipParticipant">Relationship to Participant:</label>
+                <input type="text" id="ralationshipParticipant" name="ralationshipParticipant" class="form-control"
+                    required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="phoneRalationshipParticipant">Phone Number:</label>
+                <input type="text" id="phoneRalationshipParticipant" name="phone" class="form-control"
+                    placeholder="(000) 000-0000" required>
+            </div>
+            <div class="space">
+                <h1><strong>Medical Information</strong></h1>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="medicalInformation">Medical Conditions/Allergies:</label>
+                <textarea type="text" id="medicalInformation" name="medicalInformation" class="form-control" rows="3"
+                    placeholder="Enter your message here"></textarea>
+            </div>
+            <div class="space">
+                <h1><strong>Additional Information</strong></h1>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="ageGroup">Age Group:</label>
+                <select id="ageGroup" name="ageGroup" class="form-control" required>
+                    <option value=""></option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="credcard">Credit Card Number:</label>
+                <input type="text" id="creditCardInput" maxlength="19" name="name" class="form-control"
+                    placeholder="Number" required>
+            </div>
+            <div class="dragArea row space20px space50porcento">
+
+                <div class="half-width">
+                    <label for="monthYear">Expiration Date:</label>
+                    <input type="text" id="monthYear" name="monthYear" class="form-control" placeholder="MM/YY"
+                        required>                   
+                </div>
+
+                <div class="half-width">
+                    <label for="threeDigits">Security Number:</label>
+                    <input type="text" id="threeDigits" name="threeDigits" class="form-control" maxlength="3" required>
+                </div>
+            </div>                     
+            <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                <button id="updateButton" class="btn btn-primary display-7">Update Profile</button>
+                <button id="bntBack" class="btn btn-primary display-7">Back</button>
+            </div>
+        </form>
+        <!-- Tostify -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="scriptsProfile.js" type="module"></script>
+    </div>
+</body>
+
+</html>

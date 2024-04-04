@@ -4,9 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scripts.js" type="module"></script>
-    <title>Document</title>
+    <title>Login</title>
+    <!-- Tostify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 26px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* .container {
+            padding: 16px;
+        } */
+
+        .text-center {
+            text-align: center;
+        }
+
+        .register-button {
+            text-align: right;
+        }
+    </style>
     <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -23,37 +80,33 @@
     </noscript>
     <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=3pPeqW">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=3pPeqW" type="text/css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="scriptsLogin.js" type="module"></script>
 </head>
 
 <body>
     <div class="container-fluid widthform align-items-center">
-        <h1 class="mbr-section-title mbr-fonts-style mb-0 display-2">
-            <strong>Login</strong>
-        </h1>
-        <form class="mbr-form" id="loginForm">
-            <div class="dragArea">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" class="form-control" placeholder="Nome" required>
+
+        <form class="mbr-form form-with-styler">
+            <div class="space" style="text-align: center;">
+                <h1><strong>Login</strong></h1>
             </div>
-            <div class="dragArea">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="E-mail" required>
-            </div>
-            <div class="dragArea">
-                <label for="senha">Senha:</label>
-                <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
-            </div>
-            <div class="text-center">
-                <button id="btnCriar" class="btn btn-primary display-7">Criar</button>
-                <button id="btnLogin" class="btn btn-primary" type="submit">Login</button>
-                <button id="btnRegister" class="btn btn-primary">Register</button>
-                <button id="btnSignOut" class="btn btn-primary display-7">Sign Out</button>
-                <button id="btnCurrentUser" class="btn btn-primary display-7">Current User</button>
+            <div class="container">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required id="email" class="form-control">
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" id="password" class="form-control"
+                    required>
+
+                <div class="register-button"> <!-- Div com a classe para alinhar os elementos à direita -->
+                    <input type="submit" value="Login" id="btnLogin" class="btn btn-primary display-7">
+                    <button id="btnRegister" class="btn btn-primary display-7">Register</button>
+                </div>
             </div>
         </form>
     </div>
 
+    <!-- Tostify -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 

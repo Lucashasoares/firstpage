@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script src="autenticate.js" type="module">
-        
+
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="scripts.js" type="module"></script>
+    <link rel="stylesheet" type="text/css" href="stylesMultimedia.css">
     <title>Document</title>
 
     <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
@@ -27,14 +29,90 @@
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=3pPeqW" type="text/css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
+
 <body>
-    
-    <div>Multimedia</div>
-    <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">            
-        <button id="btnCriar" class="btn btn-primary display-7">Criar</button>
-        <button id="btnCurrentUser" class="btn btn-primary display-7">Current User</button>
+    <div>
+        <div class="logged-in-info">
+            User: <span id="currentUser"></span>
+        </div>
+    </div>
+    <div class="multimedia-header">
+        Videos
+    </div>
+    <div class="videos-container">
+        <div class="video">
+            <video controls>
+                <source src="media/videosMultimedia/video01.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="media/videosMultimedia/video02.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="media/videosMultimedia/video03.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="media/videosMultimedia/video04.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="media/videosMultimedia/video05.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="media/videosMultimedia/video06.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="media/videosMultimedia/video07.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="media/videosMultimedia/video08.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="media/videosMultimedia/video09.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="media/videosMultimedia/video10.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <!-- Adicione mais vídeos conforme necessário -->
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+        <p id="btnCriar"></p>        
+        <!-- <button id="btnCriar" class="btn btn-primary display-7">Criar</button> -->
+        <!-- <button id="btnCurrentUser" class="btn btn-primary display-7">Current User</button> -->
+        <button id="btnPdf" class="btn btn-primary display-7">PDFs</button>
+        <button id="btnUpdate" class="btn btn-primary display-7">Update Profile</button>
         <button id="btnSignOut" class="btn btn-primary display-7">signOut</button>
     </div>
-    
+
+    <script src="scripts.js" type="module"></script>
 </body>
+
 </html>
