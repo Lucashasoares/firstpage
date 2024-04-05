@@ -47,6 +47,16 @@ auth.onAuthStateChanged(async function (user) {
             const creditCardInput = document.getElementById("creditCardInput")
             const monthYear = document.getElementById("monthYear")
             const threeDigits = document.getElementById("threeDigits")
+            const timeWeek = document.getElementById("timeWeek")
+            const ageRegistration = document.getElementById("ageRegistration")
+            const phoneParent1 = document.getElementById("phoneParent1")
+            const emailParent1 = document.getElementById("emailParent1")
+            const parentGuardian2 = document.getElementById("parentGuardian2")
+            const phoneParent2 = document.getElementById("phoneParent2")
+            const emailParent2 = document.getElementById("emailParent2")
+            const tShirth = document.getElementById("tShirth")
+            const shorts = document.getElementById("shorts")
+            
 
 
             name.value = docSnap.data().name
@@ -65,6 +75,15 @@ auth.onAuthStateChanged(async function (user) {
             creditCardInput.value = docSnap.data().creditCardInput
             monthYear.value = docSnap.data().monthYear
             threeDigits.value = docSnap.data().threeDigits
+            timeWeek.value = docSnap.data().timeWeek
+            ageRegistration.value = docSnap.data().ageRegistration
+            phoneParent1.value = docSnap.data().phoneParent1
+            emailParent1.value = docSnap.data().emailParent1
+            parentGuardian2.value = docSnap.data().parentGuardian2
+            phoneParent2.value = docSnap.data().phoneParent2
+            emailParent2.value = docSnap.data().emailParent2
+            tShirth.value = docSnap.data().tShirth
+            shorts.value = docSnap.data().shorts
 
             //Início do código para o botão Back
             const profileForm = document.getElementById("profileForm");
@@ -125,6 +144,15 @@ updateButton.addEventListener("click", async function () {
         const creditCardInput = document.getElementById("creditCardInput").value;
         const monthYear = document.getElementById("monthYear").value;
         const threeDigits = document.getElementById("threeDigits").value;
+        const timeWeek = document.getElementById("timeWeek").value;
+        const ageRegistration = document.getElementById("ageRegistration").value;
+        const phoneParent1 = document.getElementById("phoneParent1").value;
+        const emailParent1 = document.getElementById("emailParent1").value;
+        const parentGuardian2 = document.getElementById("parentGuardian2").value;
+        const phoneParent2 = document.getElementById("phoneParent2").value;
+        const emailParent2 = document.getElementById("emailParent2").value;
+        const tShirth = document.getElementById("tShirth").value;
+        const shorts = document.getElementById("shorts").value;
 
 
         try {
@@ -144,7 +172,16 @@ updateButton.addEventListener("click", async function () {
                 ageGroup: ageGroup,
                 creditCardInput: creditCardInput,
                 monthYear: monthYear,
-                threeDigits: threeDigits
+                threeDigits: threeDigits,
+                timeWeek: timeWeek,
+                ageRegistration: ageRegistration,
+                phoneParent1: phoneParent1,
+                emailParent1: emailParent1,
+                parentGuardian2: parentGuardian2,
+                phoneParent2: phoneParent2,
+                emailParent2: emailParent2,
+                tShirth: tShirth,
+                shorts: shorts
 
             });
 
@@ -172,4 +209,90 @@ updateButton.addEventListener("click", async function () {
     }
 });
 
+// Valida e Formata Número de Telefone
+document.getElementById('phone').addEventListener('input', function (e) {
+    var input = e.target;
+    var value = input.value.replace(/\D/g, ''); // Remover todos os caracteres não numéricos
+    var formattedValue = '';
 
+    // Adicionar os primeiros 3 dígitos entre parênteses
+    if (value.length > 0) {
+        formattedValue += '(' + value.substring(0, 3);
+    }
+    // Adicionar os próximos 3 dígitos após o parêntese
+    if (value.length > 3) {
+        formattedValue += ') ' + value.substring(3, 6);
+    }
+    // Adicionar o hífen e os últimos 4 dígitos
+    if (value.length > 6) {
+        formattedValue += '-' + value.substring(6, 10);
+    }
+
+    input.value = formattedValue;
+});
+
+// Valida e Formata Número de Telefone phoneParent1
+document.getElementById('phoneParent1').addEventListener('input', function (e) {
+    var input = e.target;
+    var value = input.value.replace(/\D/g, ''); // Remover todos os caracteres não numéricos
+    var formattedValue = '';
+
+    // Adicionar os primeiros 3 dígitos entre parênteses
+    if (value.length > 0) {
+        formattedValue += '(' + value.substring(0, 3);
+    }
+    // Adicionar os próximos 3 dígitos após o parêntese
+    if (value.length > 3) {
+        formattedValue += ') ' + value.substring(3, 6);
+    }
+    // Adicionar o hífen e os últimos 4 dígitos
+    if (value.length > 6) {
+        formattedValue += '-' + value.substring(6, 10);
+    }
+
+    input.value = formattedValue;
+});
+
+// Valida e Formata Número de Telefone phoneParent2
+document.getElementById('phoneParent2').addEventListener('input', function (e) {
+    var input = e.target;
+    var value = input.value.replace(/\D/g, ''); // Remover todos os caracteres não numéricos
+    var formattedValue = '';
+
+    // Adicionar os primeiros 3 dígitos entre parênteses
+    if (value.length > 0) {
+        formattedValue += '(' + value.substring(0, 3);
+    }
+    // Adicionar os próximos 3 dígitos após o parêntese
+    if (value.length > 3) {
+        formattedValue += ') ' + value.substring(3, 6);
+    }
+    // Adicionar o hífen e os últimos 4 dígitos
+    if (value.length > 6) {
+        formattedValue += '-' + value.substring(6, 10);
+    }
+
+    input.value = formattedValue;
+});
+
+// Valida e Formata Número de Telefone phoneRalationshipParticipant
+document.getElementById('phoneRalationshipParticipant').addEventListener('input', function (e) {
+    var input = e.target;
+    var value = input.value.replace(/\D/g, ''); // Remover todos os caracteres não numéricos
+    var formattedValue = '';
+
+    // Adicionar os primeiros 3 dígitos entre parênteses
+    if (value.length > 0) {
+        formattedValue += '(' + value.substring(0, 3);
+    }
+    // Adicionar os próximos 3 dígitos após o parêntese
+    if (value.length > 3) {
+        formattedValue += ') ' + value.substring(3, 6);
+    }
+    // Adicionar o hífen e os últimos 4 dígitos
+    if (value.length > 6) {
+        formattedValue += '-' + value.substring(6, 10);
+    }
+
+    input.value = formattedValue;
+});

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="generator" content="Mobirise v5.9.13, mobirise.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <link rel="shortcut icon" href="assets/images/logotop-128x128.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/logotop-128x127.png" type="image/x-icon">
     <meta name="description" content="">
 
 
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/parallax/jarallax.css">
     <link rel="stylesheet" href="assets/dropdown/css/style.css">
     <link rel="stylesheet" href="assets/socicon/css/styles.css">
     <link rel="stylesheet" href="assets/theme/css/style.css">
@@ -26,8 +27,8 @@
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
     </noscript>
-    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=6I3vSm">
-    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=6I3vSm" type="text/css">
+    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=ZvIzAG">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=ZvIzAG" type="text/css">
 
     <style>
         table {
@@ -35,7 +36,8 @@
             border-collapse: collapse;
         }
 
-        th, td {
+        th,
+        td {
             border: 1px solid #dddddd;
             text-align: left;
             padding: 8px;
@@ -44,7 +46,30 @@
         th {
             background-color: #f2f2f2;
         }
+
+        .overlay-image {
+            position: relative;
+            z-index: 1;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .container-fluid {
+            position: relative;
+        }
+
+        .row {
+            position: relative;
+        }
+
+        .centered-logo {
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
     </style>
+
+
 </head>
 
 <body>
@@ -55,12 +80,7 @@
         <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
             <div class="container">
                 <div class="navbar-brand">
-                    <span class="navbar-logo">
 
-                        <a href="https://www.google.com"><img src="assets/images/logotop-271x272.png" alt="UN SUENO"
-                                style="height: 5rem;"></a>
-
-                    </span>
 
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
@@ -76,7 +96,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
                         <li class="nav-item">
-                            <a class="nav-link link text-black display-4" href="https://mobiri.se">Home</a>
+                            <a class="nav-link link text-black display-4" href="www.google.com">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link link text-black show text-primary display-4" href="aboutus.html"
@@ -87,6 +107,10 @@
                                 href="index.html#footer01-m">Contact Us</a>
                         </li>
                         <li class="nav-item"><a class="nav-link link text-black text-primary display-4"
+                                href="register.html">Facility Booking</a></li>
+                        <li class="nav-item"><a class="nav-link link text-black text-primary display-4"
+                                href="register.html">Registration</a></li>
+                        <li class="nav-item"><a class="nav-link link text-black text-primary display-4"
                                 href="login.html">Login</a></li>
                     </ul>
                     <div class="icons-menu">
@@ -96,8 +120,6 @@
                         <a class="iconfont-wrapper" href="mailto:soccer@ussfa.ca">
                             <span class="p-2 mbr-iconfont mobi-mbri-letter mobi-mbri"></span>
                         </a>
-
-
                     </div>
 
                 </div>
@@ -107,23 +129,27 @@
 
     <section data-bs-version="5.1" class="header18 cid-u7fj8QYelU" data-bg-video="https://youtu.be/5t7cGGImu1A"
         id="header18-2">
-
-
         <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
         <div class="container-fluid">
-            <div class="row">
-                <div class="content-wrap col-12 col-md-12">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <!-- Logo -->
+                    <img src="media/logoTop.png" alt="Descrição da Imagem" class="overlay-image">
+                </div>
+                <div class="content-wrap col-12 col-md-6 order-md-first">
+                    <!-- Texto -->
                     <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
-                        <strong><br>Tray us out!</strong>
+                        <strong><br>Un Sueño Soccer Fitness Academy</strong>
                     </h1>
-
+                    <h2 class="mbr-section-subtitle mbr-fonts-style mbr-white mb-4 display-2">Try us out!</h2>
                     <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-5">Schedule your first assessment</p>
-                    <div class="mbr-section-btn"><a class="btn btn-white-outline display-7" href="index.html">Learn
+                    <div class="mbr-section-btn"><a class="btn btn-white-outline display-7" href="register.html">Learn
                             More</a></div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section data-bs-version="5.1" class="start article05 cid-u7fjkhTcOX" id="article05-4">
 
@@ -148,40 +174,42 @@
                                         and principles we teach apply to all sports. Whether you aim to become a
                                         top-tier soccer player or excel in a different sport, our programs are designed
                                         to help you reach your full potential.<br><br>Our training curriculum covers a
-                                        wide range of skills, including:                                        
+                                        wide range of skills, including:
                                         <br><br>
-                                        
-                                        <table>
-                                            <tr>
-                                                <th>1. Technical Skills</th>
-                                                <td>Dribbling, passing, shooting, ball control, and more.</td>
-                                            </tr>
-                                            <tr>
-                                                <th>2. Tactical Knowledge</th>
-                                                <td>Understanding game strategies, positioning, teamwork, and decision-making on the field.</td>
-                                            </tr>
-                                            <tr>
-                                                <th>3. Physical Conditioning</th>
-                                                <td>Strength, speed, agility, endurance, and flexibility training tailored to the demands of sports.</td>
-                                            </tr>
-                                            <tr>
-                                                <th>4. Mental Preparation</th>
-                                                <td>Developing focus, resilience, sportsmanship, and confidence.</td>
-                                            </tr>
-                                        </table>
-                                        
-                                        <br><br>
-                                        Our experienced coaches provide
-                                        personalized attention to each athlete, helping them develop as players and
-                                        individuals. Whether you're a beginner looking to learn the basics or a
-                                        professional athlete striving to take your game to the next level, our academy
-                                        supports your journey.<br><br>Join us and unleash your potential, no matter
-                                        which sport you pursue. Let's train together and strive for excellence on and
-                                        off the field!<br>
+
+                                    <table>
+                                        <tr>
+                                            <th>1. Technical Skills</th>
+                                            <td>Dribbling, passing, shooting, ball control, and more.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>2. Tactical Knowledge</th>
+                                            <td>Understanding game strategies, positioning, teamwork, and
+                                                decision-making on the field.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>3. Physical Conditioning</th>
+                                            <td>Strength, speed, agility, endurance, and flexibility training tailored
+                                                to the demands of sports.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>4. Mental Preparation</th>
+                                            <td>Developing focus, resilience, sportsmanship, and confidence.</td>
+                                        </tr>
+                                    </table>
+
+                                    <br><br>
+                                    Our experienced coaches provide
+                                    personalized attention to each athlete, helping them develop as players and
+                                    individuals. Whether you're a beginner looking to learn the basics or a
+                                    professional athlete striving to take your game to the next level, our academy
+                                    supports your journey.<br><br>Join us and unleash your potential, no matter
+                                    which sport you pursue. Let's train together and strive for excellence on and
+                                    off the field!<br>
                                     </p>
-                                    
+
                                     <div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-primary display-7"
-                                            href="index.html">Get started</a></div>
+                                            href="register.html">Get started</a></div>
                                 </div>
                             </div>
                         </div>
@@ -212,7 +240,7 @@
                                 hard, and achieve greatness on and off the field.<br>
                             </p>
                             <div class="mbr-section-btn mt-4"><a class="btn btn-primary display-7"
-                                    href="index.html">Start Now</a></div>
+                                    href="register.html">Start Now</a></div>
                         </div>
                     </div>
                 </div>
@@ -261,7 +289,7 @@
 
                         <h6 class="mbr-section-subtitle mbr-fonts-style mt-0 mb-4 display-5">Adult Skills &amp; Fitness
                         </h6>
-                        <div class="mbr-section-btn item-footer mt-3 main-button"><a href="index.html"
+                        <div class="mbr-section-btn item-footer mt-3 main-button"><a href="register.html"
                                 class="btn item-btn btn-primary display-7">
                                 Click here to register
                             </a></div>
@@ -301,10 +329,10 @@
             <div class="row mbr-gallery">
                 <div class="col-12 col-md-6 col-lg-3 item gallery-image">
                     <div class="item-wrapper mb-3" data-toggle="modal" data-bs-toggle="modal"
-                        data-target="#u8Zxx22w4o-modal" data-bs-target="#u8Zxx22w4o-modal">
+                        data-target="#u91hL7xuo4-modal" data-bs-target="#u91hL7xuo4-modal">
                         <img class="w-100" src="assets/images/01-739x554.jpg" alt="Mobirise Website Builder"
-                            data-slide-to="0" data-bs-slide-to="0" data-target="#lb-u8Zxx22w4o"
-                            data-bs-target="#lb-u8Zxx22w4o">
+                            data-slide-to="0" data-bs-slide-to="0" data-target="#lb-u91hL7xuo4"
+                            data-bs-target="#lb-u91hL7xuo4">
                         <div class="icon-wrapper">
                             <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
                         </div>
@@ -313,10 +341,10 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 item gallery-image">
                     <div class="item-wrapper mb-3" data-toggle="modal" data-bs-toggle="modal"
-                        data-target="#u8Zxx22w4o-modal" data-bs-target="#u8Zxx22w4o-modal">
+                        data-target="#u91hL7xuo4-modal" data-bs-target="#u91hL7xuo4-modal">
                         <img class="w-100" src="assets/images/02-739x554.jpg" alt="Mobirise Website Builder"
-                            data-slide-to="1" data-bs-slide-to="1" data-target="#lb-u8Zxx22w4o"
-                            data-bs-target="#lb-u8Zxx22w4o">
+                            data-slide-to="1" data-bs-slide-to="1" data-target="#lb-u91hL7xuo4"
+                            data-bs-target="#lb-u91hL7xuo4">
                         <div class="icon-wrapper">
                             <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
                         </div>
@@ -325,10 +353,10 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 item gallery-image">
                     <div class="item-wrapper mb-3" data-toggle="modal" data-bs-toggle="modal"
-                        data-target="#u8Zxx22w4o-modal" data-bs-target="#u8Zxx22w4o-modal">
+                        data-target="#u91hL7xuo4-modal" data-bs-target="#u91hL7xuo4-modal">
                         <img class="w-100" src="assets/images/03-636x474.jpg" alt="Mobirise Website Builder"
-                            data-slide-to="2" data-bs-slide-to="2" data-target="#lb-u8Zxx22w4o"
-                            data-bs-target="#lb-u8Zxx22w4o">
+                            data-slide-to="2" data-bs-slide-to="2" data-target="#lb-u91hL7xuo4"
+                            data-bs-target="#lb-u91hL7xuo4">
                         <div class="icon-wrapper">
                             <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
                         </div>
@@ -337,10 +365,10 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 item gallery-image">
                     <div class="item-wrapper mb-3" data-toggle="modal" data-bs-toggle="modal"
-                        data-target="#u8Zxx22w4o-modal" data-bs-target="#u8Zxx22w4o-modal">
+                        data-target="#u91hL7xuo4-modal" data-bs-target="#u91hL7xuo4-modal">
                         <img class="w-100" src="assets/images/04-739x428.jpg" alt="Mobirise Website Builder"
-                            data-slide-to="3" data-bs-slide-to="3" data-target="#lb-u8Zxx22w4o"
-                            data-bs-target="#lb-u8Zxx22w4o">
+                            data-slide-to="3" data-bs-slide-to="3" data-target="#lb-u91hL7xuo4"
+                            data-bs-target="#lb-u91hL7xuo4">
                         <div class="icon-wrapper">
                             <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
                         </div>
@@ -349,10 +377,10 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 item gallery-image">
                     <div class="item-wrapper mb-3" data-toggle="modal" data-bs-toggle="modal"
-                        data-target="#u8Zxx22w4o-modal" data-bs-target="#u8Zxx22w4o-modal">
+                        data-target="#u91hL7xuo4-modal" data-bs-target="#u91hL7xuo4-modal">
                         <img class="w-100" src="assets/images/06-601x365.jpg" alt="Mobirise Website Builder"
-                            data-slide-to="4" data-bs-slide-to="4" data-target="#lb-u8Zxx22w4o"
-                            data-bs-target="#lb-u8Zxx22w4o">
+                            data-slide-to="4" data-bs-slide-to="4" data-target="#lb-u91hL7xuo4"
+                            data-bs-target="#lb-u91hL7xuo4">
                         <div class="icon-wrapper">
                             <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
                         </div>
@@ -361,10 +389,10 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 item gallery-image">
                     <div class="item-wrapper mb-3" data-toggle="modal" data-bs-toggle="modal"
-                        data-target="#u8Zxx22w4o-modal" data-bs-target="#u8Zxx22w4o-modal">
+                        data-target="#u91hL7xuo4-modal" data-bs-target="#u91hL7xuo4-modal">
                         <img class="w-100" src="assets/images/08-638x382.jpg" alt="Mobirise Website Builder"
-                            data-slide-to="5" data-bs-slide-to="5" data-target="#lb-u8Zxx22w4o"
-                            data-bs-target="#lb-u8Zxx22w4o">
+                            data-slide-to="5" data-bs-slide-to="5" data-target="#lb-u91hL7xuo4"
+                            data-bs-target="#lb-u91hL7xuo4">
                         <div class="icon-wrapper">
                             <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
                         </div>
@@ -373,10 +401,10 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 item gallery-image">
                     <div class="item-wrapper mb-3" data-toggle="modal" data-bs-toggle="modal"
-                        data-target="#u8Zxx22w4o-modal" data-bs-target="#u8Zxx22w4o-modal">
+                        data-target="#u91hL7xuo4-modal" data-bs-target="#u91hL7xuo4-modal">
                         <img class="w-100" src="assets/images/09-639x372.jpg" alt="Mobirise Website Builder"
-                            data-slide-to="6" data-bs-slide-to="6" data-target="#lb-u8Zxx22w4o"
-                            data-bs-target="#lb-u8Zxx22w4o">
+                            data-slide-to="6" data-bs-slide-to="6" data-target="#lb-u91hL7xuo4"
+                            data-bs-target="#lb-u91hL7xuo4">
                         <div class="icon-wrapper">
                             <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
                         </div>
@@ -385,10 +413,10 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 item gallery-image">
                     <div class="item-wrapper mb-3" data-toggle="modal" data-bs-toggle="modal"
-                        data-target="#u8Zxx22w4o-modal" data-bs-target="#u8Zxx22w4o-modal">
+                        data-target="#u91hL7xuo4-modal" data-bs-target="#u91hL7xuo4-modal">
                         <img class="w-100" src="assets/images/10-633x331.jpg" alt="Mobirise Website Builder"
-                            data-slide-to="7" data-bs-slide-to="7" data-target="#lb-u8Zxx22w4o"
-                            data-bs-target="#lb-u8Zxx22w4o">
+                            data-slide-to="7" data-bs-slide-to="7" data-target="#lb-u91hL7xuo4"
+                            data-bs-target="#lb-u91hL7xuo4">
                         <div class="icon-wrapper">
                             <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
                         </div>
@@ -401,11 +429,11 @@
 
             </div>
 
-            <div class="modal mbr-slider" tabindex="-1" role="dialog" aria-hidden="true" id="u8Zxx22w4o-modal">
+            <div class="modal mbr-slider" tabindex="-1" role="dialog" aria-hidden="true" id="u91hL7xuo4-modal">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <div class="carousel slide" data-pause="false" data-bs-pause="false" id="lb-u8Zxx22w4o"
+                            <div class="carousel slide" data-pause="false" data-bs-pause="false" id="lb-u91hL7xuo4"
                                 data-interval="5000" data-bs-interval="5000">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
@@ -447,21 +475,21 @@
                                 </div>
                                 <ol class="carousel-indicators">
                                     <li data-slide-to="0" data-bs-slide-to="0" class="active"
-                                        data-target="#lb-u8Zxx22w4o" data-bs-target="#lb-u8Zxx22w4o"></li>
-                                    <li data-slide-to="1" data-bs-slide-to="1" data-target="#lb-u8Zxx22w4o"
-                                        data-bs-target="#lb-u8Zxx22w4o"></li>
-                                    <li data-slide-to="2" data-bs-slide-to="2" data-target="#lb-u8Zxx22w4o"
-                                        data-bs-target="#lb-u8Zxx22w4o"></li>
-                                    <li data-slide-to="3" data-bs-slide-to="3" data-target="#lb-u8Zxx22w4o"
-                                        data-bs-target="#lb-u8Zxx22w4o"></li>
-                                    <li data-slide-to="4" data-bs-slide-to="4" data-target="#lb-u8Zxx22w4o"
-                                        data-bs-target="#lb-u8Zxx22w4o"></li>
-                                    <li data-slide-to="5" data-bs-slide-to="5" data-target="#lb-u8Zxx22w4o"
-                                        data-bs-target="#lb-u8Zxx22w4o"></li>
-                                    <li data-slide-to="6" data-bs-slide-to="6" data-target="#lb-u8Zxx22w4o"
-                                        data-bs-target="#lb-u8Zxx22w4o"></li>
-                                    <li data-slide-to="7" data-bs-slide-to="7" data-target="#lb-u8Zxx22w4o"
-                                        data-bs-target="#lb-u8Zxx22w4o"></li>
+                                        data-target="#lb-u91hL7xuo4" data-bs-target="#lb-u91hL7xuo4"></li>
+                                    <li data-slide-to="1" data-bs-slide-to="1" data-target="#lb-u91hL7xuo4"
+                                        data-bs-target="#lb-u91hL7xuo4"></li>
+                                    <li data-slide-to="2" data-bs-slide-to="2" data-target="#lb-u91hL7xuo4"
+                                        data-bs-target="#lb-u91hL7xuo4"></li>
+                                    <li data-slide-to="3" data-bs-slide-to="3" data-target="#lb-u91hL7xuo4"
+                                        data-bs-target="#lb-u91hL7xuo4"></li>
+                                    <li data-slide-to="4" data-bs-slide-to="4" data-target="#lb-u91hL7xuo4"
+                                        data-bs-target="#lb-u91hL7xuo4"></li>
+                                    <li data-slide-to="5" data-bs-slide-to="5" data-target="#lb-u91hL7xuo4"
+                                        data-bs-target="#lb-u91hL7xuo4"></li>
+                                    <li data-slide-to="6" data-bs-slide-to="6" data-target="#lb-u91hL7xuo4"
+                                        data-bs-target="#lb-u91hL7xuo4"></li>
+                                    <li data-slide-to="7" data-bs-slide-to="7" data-target="#lb-u91hL7xuo4"
+                                        data-bs-target="#lb-u91hL7xuo4"></li>
 
 
 
@@ -471,12 +499,12 @@
                                     aria-label="Close">
                                 </a>
                                 <a class="carousel-control-prev carousel-control" role="button" data-slide="prev"
-                                    data-bs-slide="prev" href="#lb-u8Zxx22w4o">
+                                    data-bs-slide="prev" href="#lb-u91hL7xuo4">
                                     <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
                                     <span class="sr-only visually-hidden">Previous</span>
                                 </a>
                                 <a class="carousel-control-next carousel-control" role="button" data-slide="next"
-                                    data-bs-slide="next" href="#lb-u8Zxx22w4o">
+                                    data-bs-slide="next" href="#lb-u91hL7xuo4">
                                     <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
                                     <span class="sr-only visually-hidden">Next</span>
                                 </a>
@@ -510,7 +538,8 @@
                 <div class="item features-without-image col-12 col-lg-4">
                     <div class="item-wrapper">
                         <div class="img-wrapper">
-                            <img src="assets/images/1.png" alt="Mobirise Website Builder">
+                            <a href="https://davidsonfinancial.ca/site/" target="_blank"><img
+                                    src="assets/images/logodevidson-400x220.png" alt="Mobirise Website Builder"></a>
                         </div>
                         <div class="card-box align-center">
 
@@ -523,7 +552,8 @@
                 <div class="item features-without-image col-12 col-lg-4">
                     <div class="item-wrapper">
                         <div class="img-wrapper">
-                            <img src="assets/images/2.png" alt="Mobirise Website Builder">
+                            <a href="https://www.parklandcarpetoneregina.com/" target="_blank"><img
+                                    src="assets/images/logocarpet-400x219.png" alt="Mobirise Website Builder"></a>
                         </div>
                         <div class="card-box align-center">
 
@@ -536,7 +566,8 @@
                 <div class="item features-without-image col-12 col-lg-4">
                     <div class="item-wrapper">
                         <div class="img-wrapper">
-                            <img src="assets/images/4.png" alt="Mobirise Website Builder">
+                            <a href="https://alpinedrywallca.wordpress.com/" target="_blank"><img
+                                    src="assets/images/logoalpine-400x220.png" alt="Mobirise Website Builder"></a>
                         </div>
                         <div class="card-box align-center">
 
@@ -550,59 +581,107 @@
         </div>
     </section>
 
-    <section data-bs-version="5.1" class="people03 cid-u7fjsMPz1D" id="people03-6">
+    <section data-bs-version="5.1" class="clients1 cid-u919H0ilcN mbr-parallax-background" id="clients01-o">
 
 
-        <div class="container">
-            <div class="row justify-content-center">
+
+        <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(255, 255, 255);"></div>
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-5">
                 <div class="col-12 content-head">
-                    <div class="mbr-section-head mb-5">
-                        <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                            <strong>Meet the Team</strong>
-                        </h4>
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Meet the
+                            Team</strong></h3>
 
-                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="item features-image col-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img mb-3">
-                            <img src="assets/images/team1.jpg" alt="LucasSoares Website Builder" title="">
+            <div class="row justify-content-center">
+                <div class="col-sm-6 card col-lg-4">
+                    <div class="card-wrap card1">
+                        <div class="content-wrap">
+                            <div class="mbr-section-btn card-btn align-center"><a class="btn btn-white display-7"
+                                    href="http://www.google.com" target="_blank"><span
+                                        class="socicon socicon-persona mbr-iconfont mbr-iconfont-btn"></span>Profile</a>
+                            </div>
                         </div>
-                        <div class="item-content align-left">
-                            <h5 class="item-title mbr-fonts-style display-5"><strong>Emma Johnson</strong></h5>
-                            <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">Project Manager</h6>
-
-                        </div>
-
                     </div>
                 </div>
-                <div class="item features-image col-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img mb-3">
-                            <img src="assets/images/team2.jpg" alt="LucasSoares Website Builder" title="">
-                        </div>
-                        <div class="item-content align-left">
-                            <h5 class="item-title mbr-fonts-style display-5"><strong>Lina Rodriguez</strong></h5>
-                            <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">UX Designer</h6>
 
+                <div class="col-sm-6 card col-lg-4">
+                    <div class="card-wrap card2">
+                        <div class="content-wrap">
+                            <div class="mbr-section-btn card-btn align-center"><a class="btn btn-white display-7"
+                                    href="http://www.google.com" target="_blank"><span
+                                        class="socicon socicon-persona mbr-iconfont mbr-iconfont-btn"></span>Profile</a>
+                            </div>
                         </div>
-
                     </div>
                 </div>
-                <div class="item features-image col-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img mb-3">
-                            <img src="assets/images/team3.jpg" alt="LucasSoares Website Builder" title="">
-                        </div>
-                        <div class="item-content align-left">
-                            <h5 class="item-title mbr-fonts-style display-5"><strong>Aarav Patel</strong></h5>
-                            <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">Lead Developer</h6>
 
+                <div class="col-sm-6 card col-lg-4">
+                    <div class="card-wrap card3">
+                        <div class="content-wrap">
+                            <div class="mbr-section-btn card-btn align-center"><a class="btn btn-white display-7"
+                                    href="http://www.google.com" target="_blank"><span
+                                        class="socicon socicon-persona mbr-iconfont mbr-iconfont-btn"></span>Profile</a>
+                            </div>
                         </div>
-
                     </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="timeline03 cid-u91di14fQo" id="timeline03-q">
+
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 mb-5 content-head">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Facility Booking</strong>
+                    </h3>
+
+                </div>
+            </div>
+
+            <div class="row justify-content-center item features-without-image mb-5 active">
+
+                <div class="col-12 col-lg">
+
+                    <h6 class="mbr-card-subtitle mbr-fonts-style mt-0 mb-3 display-7"><strong>Our Facility is 8,000
+                            square feet. </strong><br><strong> The facility is located at Unit 1 – 1731 Ross Ave E,
+                            Regina, Saskatchewan. </strong><br><strong>The field rental fee is $130.00 per hour (plus
+                            GST $6.50) = Total: 136.50. </strong><br><strong> For rental inquiries, please email
+                            soccer@ussfa.ca</strong></h6>
+                </div>
+                <div class="col-md-12 col-lg-6 item-wrapper">
+                    <p class="mbr-text mbr-fonts-style mt-0 mb-0 display-7"><strong>Facility Cancellation Policy
+                        </strong><br>
+                        <br>1. Bookings cancelled with more than 14 days’ notice will receive a full refund.
+                        <br>2. Bookings cancelled within 14 days prior to event will receive a 50% refund.
+                        <br>3. Bookings cancelled within 7 days prior to event will receive no refund.
+                        <br> <br>All Cancellation and refund requests must be submitted in writing.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center item features-without-image mb-5">
+
+                <div class="col-12 col-lg">
+
+                    <h6 class="mbr-card-subtitle mbr-fonts-style mt-0 mb-3 display-7"></h6>
+                </div>
+                <div class="col-md-12 col-lg-6 item-wrapper">
+                    <p class="mbr-text mbr-fonts-style mt-0 mb-0 display-7"></p>
+                </div>
+            </div>
+            <div class="row justify-content-center item features-without-image mb-5">
+
+                <div class="col-12 col-lg">
+                    <h6 class="mbr-card-subtitle mbr-fonts-style mt-0 mb-3 display-7"></h6>
+                </div>
+                <div class="col-md-12 col-lg-6 item-wrapper">
+                    <p class="mbr-text mbr-fonts-style mt-0 mb-0 display-7"></p>
                 </div>
             </div>
         </div>
@@ -625,7 +704,7 @@
                     <div class="col-lg-12 mx-auto mbr-form" data-form-type="formoid">
                         <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler"
                             data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true"
-                                value="D44b/X5z4B5ziNRm2dtUzV2tPpV7jjQOa3eVmXlFSZXAmNzfqQM1BXN6k0ZLKPQ5njFXD33YKOqLO7Z5YSx9F4F0YiPKPsmdKfNzBFeCFhVH6jXECWEZ2yT1Sr+InNXk">
+                                value="RxmD4H8+p8183a+CoQWwKyYSFaPXPri73GLHYoeWQSzowRPrTfusYCXytV0yFTjVWMZxcmMlHFrDQaj+pRzcgH6JFlN+km1FL6SLEsgcl4EmSkf6TK0F/rLyW7SqRFzK">
                             <div class="row">
                                 <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for
                                     filling out the form!</div>
@@ -663,37 +742,11 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="image-wrapper">
-                        <img class="w-100" src="assets/images/gallery04.jpg" alt="LucasSoares Website Builder">
+                        <img class="w-100" src="assets/images/logoform-728x698.png" alt="LucasSoares Website Builder">
                     </div>
                 </div>
 
             </div>
-        </div>
-    </section>
-
-    <section data-bs-version="5.1" class="counter1 counters cid-u7fjLIWmUH" id="counter1-9">
-
-
-
-
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 content-head">
-                    <div class="card-wrapper mb-5">
-                        <div class="card-box align-center">
-                            <h4 class="mbr-section-title mbr-fonts-style mb-0 display-2">
-                                <strong>Book Facility</strong>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- Calendly inline widget begin -->
-            <div class="calendly-inline-widget"
-            data-url="https://calendly.com/lucashasoares/30min?text_color=000000&primary_color=7be02e"
-            style="min-width:320px;height:700px;"></div>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-        <!-- Calendly inline widget end -->
-            </div>            
         </div>
     </section>
 
@@ -730,7 +783,8 @@
                         <strong>Contacts</strong>
                     </h5>
                     <ul class="list mbr-fonts-style display-7">
-                        <li class="mbr-text item-wrap">Email: soccer@ussfa.ca</li>
+                        <li class="mbr-text item-wrap">Email: <a href="mailto:soccer@ussfa.ca"
+                                class="text-primary">soccer@ussfa.ca</a></li>
                         <li class="mbr-text item-wrap">Phone: (306) 999-9999</li>
                         <li class="mbr-text item-wrap"><br></li>
                     </ul>
@@ -785,15 +839,18 @@
         <a href="https://mobiri.se/828869"
             style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a>
-        <p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1"
-            href="https://mobirise.com/offline-website-builder.html">Offline Website Builder</a>
+        <p style="margin: 0;text-align: center;" class="display-7">&#8204;
+        </p>
+        <a style="z-index:1"
+            href="www.lucasdesigner.ca">Lucas Designer
+        </a>
     </section>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/parallax/jarallax.js"></script>
     <script src="assets/smoothscroll/smooth-scroll.js"></script>
     <script src="assets/ytplayer/index.js"></script>
     <script src="assets/dropdown/js/navbar-dropdown.js"></script>
     <script src="assets/vimeoplayer/player.js"></script>
-    <script src="assets/viewportchecker/viewportchecker.js"></script>
     <script src="assets/theme/js/script.js"></script>
     <script src="assets/formoid/formoid.min.js"></script>
 

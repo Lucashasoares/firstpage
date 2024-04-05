@@ -51,15 +51,15 @@ async function createNewUser(email, password) {
         .then(async (userCredential) => {
 
             const user = userCredential.user;
-
+            
             const name = document.getElementById('name').value;
             const dtbirth = document.getElementById('dtbirth').value;
+            const phone = document.getElementById('phone').value;
             const parentGuardian = document.getElementById('parentGuardian').value;
             const address = document.getElementById('address').value;
             const city = document.getElementById('city').value;
             const province = document.getElementById('province').value;
-            const postalcode = document.getElementById('postalcode').value;
-            const phone = document.getElementById('phone').value;
+            const postalcode = document.getElementById('postalcode').value;            
             const nameEmergency = document.getElementById('nameEmergency').value;
             const ralationshipParticipant = document.getElementById('ralationshipParticipant').value;
             const phoneRalationshipParticipant = document.getElementById('phoneRalationshipParticipant').value;
@@ -68,6 +68,16 @@ async function createNewUser(email, password) {
             const creditCardInput = document.getElementById('creditCardInput').value;
             const monthYear = document.getElementById('monthYear').value;
             const threeDigits = document.getElementById('threeDigits').value;
+            
+            const timeWeek = document.getElementById('timeWeek').value;
+            const ageRegistration = document.getElementById('ageRegistration').value;
+            const phoneParent1 = document.getElementById('phoneParent1').value;
+            const emailParent1 = document.getElementById('emailParent1').value;
+            const parentGuardian2 = document.getElementById('parentGuardian2').value;
+            const phoneParent2 = document.getElementById('phoneParent2').value;
+            const emailParent2 = document.getElementById('emailParent2').value;
+            const tShirth = document.getElementById('tShirth').value;
+            const shorts = document.getElementById('shorts').value;
 
             const timestamp = serverTimestamp();
             const coach = false;
@@ -76,12 +86,12 @@ async function createNewUser(email, password) {
             await setDoc(doc(db, "users", user.uid), {
                 name: name,
                 dtbirth: dtbirth,
+                phone: phone,                
                 parentGuardian: parentGuardian,
                 address: address,
                 city: city,
                 province: province,
-                postalcode: postalcode,
-                phone: phone,
+                postalcode: postalcode,                
                 nameEmergency: nameEmergency,
                 ralationshipParticipant: ralationshipParticipant,
                 phoneRalationshipParticipant: phoneRalationshipParticipant,
@@ -90,6 +100,16 @@ async function createNewUser(email, password) {
                 creditCardInput: creditCardInput,
                 monthYear: monthYear,
                 threeDigits: threeDigits,
+                
+                timeWeek: timeWeek,
+                ageRegistration: ageRegistration,
+                phoneParent1: phoneParent1,
+                emailParent1: emailParent1,
+                parentGuardian2: parentGuardian2,
+                phoneParent2: phoneParent2,
+                emailParent2: emailParent2,
+                tShirth: tShirth,    
+                shorts: shorts,            
 
                 timestamp: timestamp,
                 coach: coach
@@ -217,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("dentro do bntVideos")
         btnVideos.addEventListener('click', function () {
             console.log("dentro do envio de pagina")
-            window.location.href = 'multimedia.html';
+            window.location.href = 'coach.html';
         });
     }
 

@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+    <title>Registration</title>
 
     <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -27,73 +27,63 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="styles.css">
 
+    <style>
+        .centered-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
 </head>
 
 <body>
     <img src="media/logoTop.png" class="logoTop">
     <div class="container-fluid widthform align-items-center">
-        
-        <p>
-            Ready to see your child&#39;s soccer skills soar? Our camp offers a
-            unique opportunity for your child to learn from our experienced
-            coaches (The Amazing Paco). They will provide expert training,
-            focusing on agility, strength, dribbling, passing, shooting, and
-            defensive skills, ensuring your child&#39;s progress is in safe hands.
-        </p>
-        <p>
-            Get ready to see your child&#39;s physical abilities reach new heights!
-            Our fitness program is designed to help them build strength,
-            speed, agility, and endurance. With this comprehensive training,
-            your child will be able to perform at their best, both on and off the
-            field.
-        </p>
-        <p>
-            Soccer is all about fun and friendship! At our camp, your child will meet other players
-            who share their passion for the game. Together, they&#39;ll create unforgettable memories!
-        </p>
-        <p>
-            Whether your children dream of playing professionally or just want to improve their
-            game, our camp will help them set goals and provide the support and motivation they
-            need to succeed.
-        </p>
-        <div class="dragArea row space20px">
+        <div class="dragArea row space20px" style="text-align: center;">
+            <p>PROGRAMS & REGISTRATION</p>
             <div class="half-width">
-                <label for="ageGroup1"><b>Age Group:</b></label>
-                <p id="ageGroup1">8 to 10</p>
-                <label for="dates1"><b>Dates:</b></label>
-                <p id="dates1">April 01, 2024, to April 05, 2024</p>
-                <label for="time1"><b>Time:</b></label>
-                <p id="time1">9:00 AM to 12:00 PM</p>
-                <label for="price1"><b>Price:</b></label>
-                <p id="price1">$150.00 Plus GST</p>
+                <label for="ageGroup1"><b>Youth Skills & Fitness</b></label>
+                <label id="ageGroup1">Age Group: 8 to 10 – Two Classes per week</label>
+                <p><b>Price:</b> $159.99 Plus GST $8.00 = $167.99</p>
+                <label for="dates1">Age Group: 11 to 17 – Three Classes per week</label>
+                <p id="dates1"><b>Price:</b> $239.99 Plus GST $12.00 = $251.99</p>
             </div>
             <div class="half-width">
-                <label for="ageGroup2"><b>Age Group:</b></label>
-                <p id="ageGroup2">11 to 15</p>
-                <label for="dates2"><b>Dates:</b></label>
-                <p id="dates2">April 01, 2024, to April 05, 2024</p>
-                <label for="time2"><b>Time:</b></label>
-                <p id="time2">1:00 PM to 4:00 PM</p>
-                <label for="price2"><b>Price:</b></label>
-                <p id="price2">$175.00 Plus GST</p>
+                <label for="ageGroup2"><b>Adult Skills & Fitness</b></label>
+                <p id="ageGroup2">Coming Soon</p>
+
             </div>
         </div>
         <div class="space">
-            <h1><strong>Register</strong></h1>
+            <h1><strong>Registration</strong></h1>
         </div>
         <form class="mbr-form form-with-styler">
 
+            <div class="dragArea row space20px">
+                <label for="timeWeek">Chose your program:</label>
+                <select id="timeWeek" name="timeWeek" class="form-control" required>
+                    <option value=""></option>
+                    <option value="AB">Two Times a Week</option>
+                    <option value="BC">Three Times a Week</option>
+                </select>
+            </div>
             <div class="dragArea row">
-                <label for="name">Full Name:</label>
+                <label for="name">Participants Full Name:</label>
                 <input type="name" id="name" name="name" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="dragArea row">
+                <label for="ageRegistration">Age at Registration Time:</label>
+                <input type="number" id="ageRegistration" name="ageRegistration" class="form-control"
+                    placeholder="Years" required>
             </div>
             <div class="dragArea row space20px">
                 <label for="dtbirth">Date of Birth:</label>
                 <input type="date" id="dtbirth" name="dtbirth" class="form-control" required>
             </div>
             <div class="dragArea row space20px">
-                <label for="parentGuardian">Parent/Guardian full name (if under 18):</label>
-                <input type="name" id="parentGuardian" name="parentGuardian" class="form-control">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" class="form-control" placeholder="(000) 000-0000" required>
             </div>
             <div class="dragArea row space20px">
                 <label for="address">Address:</label>
@@ -128,17 +118,47 @@
                     required>
             </div>
             <div class="dragArea row space20px">
-                <label for="postalcode">Phone Number:</label>
-                <input type="text" id="phone" name="phone" class="form-control" placeholder="(000) 000-0000" required>
-            </div>
-            <div class="dragArea row space20px">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" class="form-control" placeholder="E-mail" required>
             </div>
             <div class="dragArea row space20px">
-                <label for="senha">Senha:</label>
+                <label for="senha">Password:</label>
                 <input type="password" id="senha" name="senha" class="form-control" placeholder="Password" required>
             </div>
+
+            <div class="space">
+                <h1><strong>Parent/Guardian (if under 18)</strong></h1>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="parentGuardian">Contact 1</label>
+                <input type="name" id="parentGuardian" name="parentGuardian" class="form-control">
+            </div>
+            <div class="dragArea row space20px">
+                <label for="phoneParent1">Phone Number:</label>
+                <input type="text" id="phoneParent1" name="phoneParent1" class="form-control"
+                    placeholder="(000) 000-0000" required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="emailParent1">Email:</label>
+                <input type="email" id="emailParent1" name="emailParent1" class="form-control" placeholder="E-mail"
+                    required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="parentGuardian">Contact 2</label>
+                <input type="name" id="parentGuardian2" name="parentGuardian" class="form-control">
+            </div>
+            <div class="dragArea row space20px">
+                <label for="phoneParent1">Phone Number:</label>
+                <input type="text" id="phoneParent2" name="phoneParent1" class="form-control"
+                    placeholder="(000) 000-0000" required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="emailParent1">Email:</label>
+                <input type="email" id="emailParent2" name="emailParent1" class="form-control" placeholder="E-mail"
+                    required>
+            </div>
+
+
             <div class="space">
                 <h1><strong>Emergency Contact</strong></h1>
             </div>
@@ -157,6 +177,7 @@
                 <input type="text" id="phoneRalationshipParticipant" name="phone" class="form-control"
                     placeholder="(000) 000-0000" required>
             </div>
+
             <div class="space">
                 <h1><strong>Medical Information</strong></h1>
             </div>
@@ -165,8 +186,37 @@
                 <textarea type="text" id="medicalInformation" name="medicalInformation" class="form-control" rows="3"
                     placeholder="Enter your message here"></textarea>
             </div>
+
             <div class="space">
                 <h1><strong>Additional Information</strong></h1>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="tShirth">T-Shirth:</label>
+                <select id="tShirth" name="tShirth" class="form-control" required>
+                    <option value=""></option>
+                    <option value="Youth S">Youth S</option>
+                    <option value="Youth M">Youth M</option>
+                    <option value="Youth L">Youth L</option>
+                    <option value="Youth XL">Youth XL</option>
+                    <option value="Adult Small">Adult Small</option>
+                    <option value="Adult Medium">Adult Medium</option>
+                    <option value="Adult Larg">Adult Larg</option>
+                    <option value="Adult X-Large">Adult X-Large</option>
+                </select>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="shorts">Shorts:</label>
+                <select id="shorts" name="shorts" class="form-control" required>
+                    <option value=""></option>
+                    <option value="Youth S">Youth S</option>
+                    <option value="Youth M">Youth M</option>
+                    <option value="Youth L">Youth L</option>
+                    <option value="Youth XL">Youth XL</option>
+                    <option value="Adult Small">Adult Small</option>
+                    <option value="Adult Medium">Adult Medium</option>
+                    <option value="Adult Larg">Adult Larg</option>
+                    <option value="Adult X-Large">Adult X-Large</option>
+                </select>
             </div>
             <div class="dragArea row space20px">
                 <label for="ageGroup">Age Group:</label>
@@ -192,12 +242,37 @@
                     <label for="threeDigits">Security Number:</label>
                     <input type="text" id="threeDigits" name="threeDigits" class="form-control" maxlength="3" required>
                 </div>
-            </div>            
+            </div>
+
+            <div class="space">
+                <h1><strong>Very Important</strong></h1>
+            </div>
+            <div class="dragArea row space20px space50porcento" style="align-items: center;">
+                <p><b>Please filled out the waiver and photo/video release form below and send by email to soccer@ussfa.ca</b></p>
+                <div class="half-width">
+                    <div class="pdf" style="text-align: center;">
+                        <a href="media/pdf/waiver.pdf" target="_blank">
+                            <img src="media/pdf.png" alt="PDF Thumbnail" class="centered-img">
+                            <p style="text-align: center; margin-bottom: 30px;">Waiver</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="half-width">
+                    <div class="pdf" style="text-align: center;">
+                        <a href="media/pdf/photoVideoReleaseForm.pdf" target="_blank">
+                            <img src="media/pdf.png" alt="PDF Thumbnail" class="centered-img">
+                            <p style="text-align: center; margin-bottom: 30px;">Photo Video Release</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
             <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
                 <p id="btnSignOut"></p>
                 <button id="btnCriar" class="btn btn-primary display-7">Criar</button>
                 <!-- <button id="btnCurrentUser" class="btn btn-primary display-7">Current User</button> -->
-                <button id="btnBack" class="btn btn-primary display-7">Back</button>             
+                <button id="btnBack" class="btn btn-primary display-7">Back</button>
             </div>
 
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile</title>
 
 
     <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
@@ -35,16 +35,29 @@
         </div>
         <form id="profileForm" class="mbr-form form-with-styler">
             <div class="dragArea row space20px">
-                <label for="name">Full Name:</label>
+                <label for="timeWeek">Chose your program:</label>
+                <select id="timeWeek" name="timeWeek" class="form-control" required>
+                    <option value=""></option>
+                    <option value="AB">Two Times a Week</option>
+                    <option value="BC">Three Times a Week</option>
+                </select>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="name">Participants Full Name:</label>
                 <input type="name" id="name" name="name" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="dragArea row">
+                <label for="ageRegistration">Age at Registration Time:</label>
+                <input type="number" id="ageRegistration" name="ageRegistration" class="form-control"
+                    placeholder="Years" required>
             </div>
             <div class="dragArea row space20px">
                 <label for="dtbirth">Date of Birth:</label>
                 <input type="date" id="dtbirth" name="dtbirth" class="form-control" required>
             </div>
             <div class="dragArea row space20px">
-                <label for="parentGuardian">Parent/Guardian full name (if under 18):</label>
-                <input type="name" id="parentGuardian" name="parentGuardian" class="form-control">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" class="form-control" placeholder="(000) 000-0000" required>
             </div>
             <div class="dragArea row space20px">
                 <label for="address">Address:</label>
@@ -78,10 +91,39 @@
                 <input type="text" id="postalcode" name="postalcode" class="form-control" placeholder="A1A 1A1"
                     required>
             </div>
-            <div class="dragArea row space20px">
-                <label for="postalcode">Phone Number:</label>
-                <input type="text" id="phone" name="phone" class="form-control" placeholder="(000) 000-0000" required>
+
+            <div class="space">
+                <h1><strong>Parent/Guardian (if under 18)</strong></h1>
             </div>
+            <div class="dragArea row space20px">
+                <label for="parentGuardian">Contact 1</label>
+                <input type="name" id="parentGuardian" name="parentGuardian" class="form-control">
+            </div>
+            <div class="dragArea row space20px">
+                <label for="phoneParent1">Phone Number:</label>
+                <input type="text" id="phoneParent1" name="phoneParent1" class="form-control"
+                    placeholder="(000) 000-0000" required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="emailParent1">Email:</label>
+                <input type="email" id="emailParent1" name="emailParent1" class="form-control" placeholder="E-mail"
+                    required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="parentGuardian">Contact 2</label>
+                <input type="name" id="parentGuardian2" name="parentGuardian" class="form-control">
+            </div>
+            <div class="dragArea row space20px">
+                <label for="phoneParent1">Phone Number:</label>
+                <input type="text" id="phoneParent2" name="phoneParent1" class="form-control"
+                    placeholder="(000) 000-0000" required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="emailParent1">Email:</label>
+                <input type="email" id="emailParent2" name="emailParent1" class="form-control" placeholder="E-mail"
+                    required>
+            </div>
+            
             <div class="space">
                 <h1><strong>Emergency Contact</strong></h1>
             </div>
@@ -100,6 +142,7 @@
                 <input type="text" id="phoneRalationshipParticipant" name="phone" class="form-control"
                     placeholder="(000) 000-0000" required>
             </div>
+
             <div class="space">
                 <h1><strong>Medical Information</strong></h1>
             </div>
@@ -108,8 +151,37 @@
                 <textarea type="text" id="medicalInformation" name="medicalInformation" class="form-control" rows="3"
                     placeholder="Enter your message here"></textarea>
             </div>
+            
             <div class="space">
                 <h1><strong>Additional Information</strong></h1>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="tShirth">T-Shirth:</label>
+                <select id="tShirth" name="tShirth" class="form-control" required>
+                    <option value=""></option>
+                    <option value="Youth S">Youth S</option>
+                    <option value="Youth M">Youth M</option>
+                    <option value="Youth L">Youth L</option>
+                    <option value="Youth XL">Youth XL</option>
+                    <option value="Adult Small">Adult Small</option>
+                    <option value="Adult Medium">Adult Medium</option>
+                    <option value="Adult Larg">Adult Larg</option>
+                    <option value="Adult X-Large">Adult X-Large</option>
+                </select>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="shorts">Shorts:</label>
+                <select id="shorts" name="shorts" class="form-control" required>
+                    <option value=""></option>
+                    <option value="Youth S">Youth S</option>
+                    <option value="Youth M">Youth M</option>
+                    <option value="Youth L">Youth L</option>
+                    <option value="Youth XL">Youth XL</option>
+                    <option value="Adult Small">Adult Small</option>
+                    <option value="Adult Medium">Adult Medium</option>
+                    <option value="Adult Larg">Adult Larg</option>
+                    <option value="Adult X-Large">Adult X-Large</option>
+                </select>
             </div>
             <div class="dragArea row space20px">
                 <label for="ageGroup">Age Group:</label>
@@ -145,7 +217,7 @@
         </form>
         <!-- Tostify -->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-        <script src="scriptsProfile.js" type="module"></script>
+        <script src="scriptsProfile.js" type="module"></script>        
     </div>
 </body>
 
