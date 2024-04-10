@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap">
+    </noscript>
+    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=3pPeqW">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=3pPeqW" type="text/css">
+    <!-- Tostify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .centered-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <img src="media/logoTop.png" class="logoTop">
+    <div class="container-fluid widthform align-items-center">
+
+        <div class="space">
+            <h1><strong>BOOK YOUR FREE SESSION</strong></h1>
+            <br>
+            <p>
+            <h6><b>Please fill out the form below and one of our Team Members<br><br>
+                    will get in touch with you shortly.</b></h6>
+            </p>
+            <br>
+            <p style="line-height: 1.5;">
+            <h5>Our Training Address is Unit# 1 – 1731 Ross Ave E, Regina, Saskatchewan.<br><br>
+                If you have any questions, please don't hesitate to contact us at<br><br>
+                1-866-270-5556 or send us an email at soccer@ussfa.ca</h5>
+            </p>
+        </div>
+        <form class="mbr-form form-with-styler" action="https://formsubmit.co/lucashasoares@gmail.com" method="POST">
+            <div class="dragArea row space20px">
+                <label for="name">Parent's Full name:</label>
+                <input type="name" id="name" name="Parents-name" class="form-control" required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="name">Parent's email Address:</label>
+                <input type="name" id="Parents-email-address" name="Parents-email-address" class="form-control"
+                    required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="phone">Parent's Phone Number:</label>
+                <input type="text" id="phone" name="Parents-Phone-Number" class="form-control"
+                    placeholder="(000) 000-0000" required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="address">Address:</label>
+                <input type="name" id="address" name="address" class="form-control" required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="name">Child's Full name:</label>
+                <input type="name" id="child-name" name="Childs-name" class="form-control" required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="name">Child's Gender:</label>
+                <input type="name" id="child-gender" name="Child-gender" class="form-control" required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="name">Age of Child:</label>
+                <input type="number" id="child-age" name="Child-age" class="form-control" required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="dtbirth">Child's Birthday:</label>
+                <input type="date" id="child-birthday" name="Child-birthday" class="form-control" required>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="childLevel">Child's Skill Level:</label>
+                <select id="child-level" name="Child-level" class="form-control" required>
+                    <option value=""></option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+            </div>
+            <div class="dragArea row space20px">
+                <label for="medicalInformation">How did you hear of USSFA? Additional Comments?</label>
+                <textarea type="text" id="additionalComments" name="Additional-Comments" class="form-control" rows="3"
+                    placeholder="Enter your message here"></textarea>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                <p id="btnSignOut"></p>
+                <button type="submit" class="btn btn-danger display-7" style="margin-bottom: 50px;">Send
+                    Message</button>
+                <!-- <button id="btnCurrentUser" class="btn btn-primary display-7">Current User</button> -->
+                <button id="btnBack" class="btn btn-danger display-7" style="margin-bottom: 50px;">Back</button>
+                <input type="hidden" name="_subject" value="New submission from BOOK YOUR FREE SESSION">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://ussfa.ca/index.html#form03-8">
+            </div>
+
+
+
+        </form>
+    </div>
+
+    <!-- Tostify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- <script src="scripts.js" type="module"></script> -->
+    <script src="scriptsFreeSession.js"></script>
+    <!-- <script>
+        // Adiciona um listener de evento para o input
+        document.getElementById('credit-card-input').addEventListener('input', function (e) {
+            var input = e.target;
+            var trimmedValue = input.value.replace(/\s+/g, '').replace(/[^0-9]/gi, ''); // Remove espaços e caracteres não numéricos
+        
+            if (trimmedValue.length > 0) {
+                // Aplica a máscara
+                trimmedValue = trimmedValue.match(new RegExp('.{1,4}', 'g')).join(' ');
+            }
+        
+            input.value = trimmedValue;
+        });    
+    </script> -->
+</body>
+
+</html>
