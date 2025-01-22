@@ -932,3 +932,139 @@
 .socicon-zynga:before {
   content: "\e0a9";
 }
+
+/* Seção de Testemunhos */
+#testimonials {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container principal do carrossel */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 800px; /* Define um tamanho adequado */
+  width: 100%;
+  overflow: hidden; /* Esconde qualquer conteúdo que passe da tela */
+}
+
+/* Envolve o conteúdo para ocultar os itens que não estão visíveis */
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+/* Área do conteúdo (todos os testemunhos) */
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%; /* Ajusta a largura total com base no número de testemunhos */
+}
+
+/* Cada testemunho agora ocupa um espaço fixo dentro do carrossel */
+.testimonial {
+  flex: 0 0 100%; /* Cada item ocupa exatamente 100% do espaço disponível */
+  max-width: 100%;
+  min-height: 250px; /* Garante que os testemunhos tenham uma altura uniforme */
+  padding: 30px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ajuste do texto do testemunho */
+.testimonial p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+  max-width: 80%; /* Evita que o texto fique muito largo */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Setas de navegação */
+.arrow {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s;
+  padding: 15px;
+}
+
+/* Ajuste no espaçamento das setas */
+.arrow:first-child {
+  margin-right: 30px;
+}
+
+.arrow:last-child {
+  margin-left: 30px;
+}
+
+.arrow:hover {
+  color: #007bff;
+}
+
+/*testemunhos fim */
+
+/* Seção de Apoiadores */
+.supporters-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+/* Container que segura o texto e a imagem */
+.supporters-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha se necessário */
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px; /* Maior espaçamento entre texto e imagem */
+}
+
+/* Área do Texto */
+.supporters-text {
+  flex: 1;
+  text-align: left;
+}
+
+.supporters-text h2 {
+  font-size: 2rem; /* Aumenta um pouco o tamanho do texto */
+  color: #333;
+  max-width: 450px; /* Define um limite para o texto */
+}
+
+/* Área da Imagem */
+.supporters-image {
+  flex: 1;
+  display: flex; /* Centraliza a imagem no espaço disponível */
+  justify-content: center;
+  align-items: center;
+}
+
+.supporters-image img {
+  width: 80%; /* Faz a imagem ocupar 80% do espaço disponível */
+  max-width: 500px; /* Define um tamanho máximo */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fim Seção de Apoiadores */
