@@ -1068,3 +1068,24 @@
 }
 
 /* Fim Seção de Apoiadores */
+
+/* cor dos icones facebook, instagram youtube pra vermelho */
+.social-row .socicon-instagram,
+.social-row .socicon-facebook,
+.social-row .socicon-youtube {
+        color: red !important; /* Força a cor vermelha nos ícones */
+    }
+/* fim cor dos icones facebook, instagram youtube pra vermelho */
+
+/* cor dos textos para preto */
+.header18 .mbr-section-title, 
+.header18 .mbr-section-subtitle, 
+.header18 .mbr-text {
+        color: black !important; /* Para preto */
+        /* color: red !important; */ /* Use esta linha se preferir vermelho */
+}
+.header18 .btn-white-outline {
+  color: black !important; /* Deixa o texto preto */
+  border-color: black !important; /* Deixa a borda preta */
+}
+/* cor dos textos para preto */
