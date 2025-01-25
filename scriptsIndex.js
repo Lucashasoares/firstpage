@@ -41,7 +41,7 @@ function updateTestimonial() {
 const autoSlide = setInterval(() => {
     currentIndex = (currentIndex + 1) % totalTestimonials;
     updateTestimonial();
-}, 5000);
+}, 8000);
 
 // Botão para voltar ao testemunho anterior
 document.getElementById("prevBtn").addEventListener("click", () => {
