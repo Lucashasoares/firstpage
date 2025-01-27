@@ -1089,3 +1089,66 @@
   border-color: black !important; /* Deixa a borda preta */
 }
 /* cor dos textos para preto */
+
+/* configuração do icone do facebook, instagram e youtube */
+/* Estilização base para os ícones sociais */
+.soc-item a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Facebook */
+.soc-item a[href*="facebook.com"] {
+  background: #1877F2;
+}
+
+/* YouTube */
+.soc-item a[href*="youtube.com"] {
+  background: #FF0000;
+}
+
+/* Instagram */
+.soc-item a[href*="instagram.com"] {
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+}
+
+/* Ajuste o tamanho de todos os ícones dentro dos links */
+.soc-item a svg {
+  width: 60px;  /* Ajusta o tamanho do ícone */
+  height: 60px; /* Ajusta o tamanho do ícone */
+  fill: white;
+  object-fit: contain; /* Garante que o ícone tenha proporções corretas */
+}
+
+/* Ajuste o tamanho específico do "f" do Facebook */
+.soc-item a[href*="facebook.com"] svg path {
+  transform: scale(1.5); /* Aumenta o tamanho do "f" */
+  transform-origin: center; /* Centraliza a transformação */
+}
+
+/* Ajuste o tamanho específico da seta do YouTube */
+.soc-item a[href*="youtube.com"] svg path {
+  transform: scale(1.7); /* Aumenta o tamanho da seta */
+  transform-origin: center; /* Centraliza a transformação */
+}
+
+/* Ajuste do tamanho do ícone dentro do círculo */
+.soc-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+
+
+/* fim da configuração do icone do facebook e instagram */
