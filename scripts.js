@@ -249,6 +249,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
+
 // const btnRegister = document.getElementById('btnRegister');
 // btnRegister.addEventListener('click', function (event) {
 //     event.preventDefault()

@@ -24,3 +24,40 @@ document.addEventListener('DOMContentLoaded', function () {
        
 
 });
+
+// testemunhos
+const carouselContent = document.querySelector(".carousel-content");
+const testimonials = document.querySelectorAll(".testimonial");
+const totalTestimonials = testimonials.length;
+let currentIndex = 0;
+
+// Atualiza o carrossel para exibir o testemunho correto com animação deslizante
+function updateTestimonial() {
+    let offset = -currentIndex * 100; // Move 100% para cada testemunho
+    carouselContent.style.transform = `translateX(${offset}%)`;
+}
+
+// Muda automaticamente a cada 5 segundos
+const autoSlide = setInterval(() => {
+    currentIndex = (currentIndex + 1) % totalTestimonials;
+    updateTestimonial();
+}, 8000);
+
+// Botão para voltar ao testemunho anterior
+document.getElementById("prevBtn").addEventListener("click", () => {
+    clearInterval(autoSlide); // Para o auto-slide ao clicar
+    currentIndex = (currentIndex - 1 + totalTestimonials) % totalTestimonials;
+    updateTestimonial();
+});
+
+// Botão para avançar ao próximo testemunho
+document.getElementById("nextBtn").addEventListener("click", () => {
+    clearInterval(autoSlide); // Para o auto-slide ao clicar
+    currentIndex = (currentIndex + 1) % totalTestimonials;
+    updateTestimonial();
+});
+
+// Inicializa o primeiro testemunho corretamente
+updateTestimonial();
+
+// testemunhos fim

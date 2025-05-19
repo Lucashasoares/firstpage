@@ -932,3 +932,223 @@
 .socicon-zynga:before {
   content: "\e0a9";
 }
+
+/* Seção de Testemunhos */
+#testimonials {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container principal do carrossel */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 800px; /* Define um tamanho adequado */
+  width: 100%;
+  overflow: hidden; /* Esconde qualquer conteúdo que passe da tela */
+}
+
+/* Envolve o conteúdo para ocultar os itens que não estão visíveis */
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+/* Área do conteúdo (todos os testemunhos) */
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%; /* Ajusta a largura total com base no número de testemunhos */
+}
+
+/* Cada testemunho agora ocupa um espaço fixo dentro do carrossel */
+.testimonial {
+  flex: 0 0 100%; /* Cada item ocupa exatamente 100% do espaço disponível */
+  max-width: 100%;
+  min-height: 250px; /* Garante que os testemunhos tenham uma altura uniforme */
+  padding: 30px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ajuste do texto do testemunho */
+.testimonial p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+  max-width: 80%; /* Evita que o texto fique muito largo */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Setas de navegação */
+.arrow {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s;
+  padding: 15px;
+}
+
+/* Ajuste no espaçamento das setas */
+.arrow:first-child {
+  margin-right: 30px;
+}
+
+.arrow:last-child {
+  margin-left: 30px;
+}
+
+.arrow:hover {
+  color: #007bff;
+}
+
+/*testemunhos fim */
+
+/* Seção de Apoiadores */
+.supporters-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+/* Container que segura o texto e a imagem */
+.supporters-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha se necessário */
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px; /* Maior espaçamento entre texto e imagem */
+}
+
+/* Área do Texto */
+.supporters-text {
+  flex: 1;
+  text-align: left;
+}
+
+.supporters-text h2 {
+  font-size: 2rem; /* Aumenta um pouco o tamanho do texto */
+  color: #333;
+  max-width: 450px; /* Define um limite para o texto */
+}
+
+/* Área da Imagem */
+.supporters-image {
+  flex: 1;
+  display: flex; /* Centraliza a imagem no espaço disponível */
+  justify-content: center;
+  align-items: center;
+}
+
+.supporters-image img {
+  width: 80%; /* Faz a imagem ocupar 80% do espaço disponível */
+  max-width: 500px; /* Define um tamanho máximo */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fim Seção de Apoiadores */
+
+/* cor dos icones facebook, instagram youtube pra vermelho */
+.social-row .socicon-instagram,
+.social-row .socicon-facebook,
+.social-row .socicon-youtube {
+        color: red !important; /* Força a cor vermelha nos ícones */
+    }
+/* fim cor dos icones facebook, instagram youtube pra vermelho */
+
+/* cor dos textos para preto */
+.header18 .mbr-section-title, 
+.header18 .mbr-section-subtitle, 
+.header18 .mbr-text {
+        color: black !important; /* Para preto */
+        /* color: red !important; */ /* Use esta linha se preferir vermelho */
+}
+.header18 .btn-white-outline {
+  color: black !important; /* Deixa o texto preto */
+  border-color: black !important; /* Deixa a borda preta */
+}
+/* cor dos textos para preto */
+
+/* configuração do icone do facebook, instagram e youtube */
+/* Estilização base para os ícones sociais */
+.soc-item a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Facebook */
+.soc-item a[href*="facebook.com"] {
+  background: #1877F2;
+}
+
+/* YouTube */
+.soc-item a[href*="youtube.com"] {
+  background: #FF0000;
+}
+
+/* Instagram */
+.soc-item a[href*="instagram.com"] {
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+}
+
+/* Ajuste o tamanho de todos os ícones dentro dos links */
+.soc-item a svg {
+  width: 60px;  /* Ajusta o tamanho do ícone */
+  height: 60px; /* Ajusta o tamanho do ícone */
+  fill: white;
+  object-fit: contain; /* Garante que o ícone tenha proporções corretas */
+}
+
+/* Ajuste o tamanho específico do "f" do Facebook */
+.soc-item a[href*="facebook.com"] svg path {
+  transform: scale(1.5); /* Aumenta o tamanho do "f" */
+  transform-origin: center; /* Centraliza a transformação */
+}
+
+/* Ajuste o tamanho específico da seta do YouTube */
+.soc-item a[href*="youtube.com"] svg path {
+  transform: scale(1.7); /* Aumenta o tamanho da seta */
+  transform-origin: center; /* Centraliza a transformação */
+}
+
+/* Ajuste do tamanho do ícone dentro do círculo */
+.soc-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+
+
+/* fim da configuração do icone do facebook e instagram */
